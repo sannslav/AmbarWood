@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmbarWood</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Light.ttf");
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Tenor Sans";
+      src: url("fonts/TenorSans-Regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Montserrat";
+      background-color: #F8F3EF;
+      color: #222222;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+                <img src="images/burger-close.svg" alt="cross">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link fs-14 dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Каталог
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Амбарная доска для стен</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старая половая доска</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старые балки и фальшбалки</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Стеновые панели</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Двери</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Мебель из старых лодок</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Зеркала</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Ковры (винтажные)</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старинный кирпич (императорский)</a></li>
+                    <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Услуги</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14 fw-bold" aria-current="page" href="about-board.html">Об амбарной доске</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14 fw-bold" aria-current="page" href="our-works.html">Наши работы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14 fw-bold" aria-current="page" href="about-us.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14 fw-bold" aria-current="page" href="blog.html">Блог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14 fw-bold" aria-current="page" href="contacts.html">Контакты</a>
+                </li>
+                <li class="nav-item d-flex gap-2">
+                  <a href="#">
+                    <img src="images/whatsapp-nav.svg" alt="whatsapp">
+                  </a>
+                  <a href="#">
+                    <img src="images/vk-nav.svg" alt="vk">
+                  </a>
+                  <a href="#">
+                    <img src="images/youtube-nav.svg" alt="youtube">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-14 dropdown-toggle fw-bold" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Каталог
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Амбарная доска для стен</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старая половая доска</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старые балки и фальшбалки</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Стеновые панели</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Двери</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Мебель из старых лодок</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Зеркала</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Ковры (винтажные)</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Старинный кирпич (императорский)</a></li>
+                  <li><a class="dropdown-item fs-14 fw-bold" href="catalog-board.html">Услуги</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-14 fw-bold" aria-current="page" href="about-board.html">Об амбарной доске</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-14 fw-bold" aria-current="page" href="our-works.html">Наши работы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-14 fw-bold" aria-current="page" href="about-us.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-14 fw-bold" aria-current="page" href="blog.html">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-14 fw-bold" aria-current="page" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="fs-14" style="cursor: pointer;">+7 (929) 590 82-87</div>
+            <div class="fs-12" style="color: #C0C0C0;">Москва и Санкт-Петербург</div>
+          </div>
+          <button type="button" class="btn-custom fs-6 show-before-phone" style="width: 226px; height: 45px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Консультация
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mx-auto d-flex flex-column align-items-center">
+          <button type="button" class="btn-close" style="border: none; background-color: transparent; margin: 0 0 0 auto;" data-bs-dismiss="modal" aria-label="Закрыть">
+            <img src="images/modal-close.svg" alt="close">
+          </button>
+          <div class="fs-4 fw-bold text-center" style="margin-bottom: 10px;">Укажите ваши контактные данные</div>
+          <div class="fs-14 mb-5">Мы свяжемся с вами в ближайшее время</div>
+          <form class="was-validated d-flex" id="myForm">
+            <div class="d-flex flex-column gap-20 align-items-center">
+              <div class="d-flex flex-column gap-20 align-items-center">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                  <label class="fw-bold fs-6" for="name1">Ваше имя</label>
+                  <input type="text" class="form-check-input fs-14 m-0" style="width: 257px; height: 64px; background-color: #fff;" id="name1" name="name1" pattern=".{2,}" required placeholder="Имя" aria-label="Username"/>
+                </div>
+                <div class="d-flex flex-column" style="gap: 5px;">
+                  <label class="fw-bold fs-6" for="tel1">Ваш телефон</label>
+                  <input type="tel" class="form-check-input fs-14 m-0" style="width: 257px; height: 64px; background-color: #fff;" id="tel1" pattern="^\+?\d{10,}$" name="tel1" required placeholder="+7 (999) 999 99-99" aria-label="tel"/>
+                </div>
+                <button type="submit" class="btn btn-custom fs-18 fw-bold" style="width: 257px; height: 64px;">
+                  Оставить заявку
+                </button>
+              </div>
+              <div class="fw-light fs-12 text-center" style="width: 194px;">Нажимая на кнопку, вы соглашаетесь с Политикой конфиденциальности данных</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="container container-fon-dop p-0 d-flex position-relative align-items-center justify-content-center" style="background-image: url('images/fon-about-board.png');">
+      <div class="position-absolute align-items-center d-flex gap-20" style="top: 10%; left: 10%;">
+        <div class="d-flex gap-2 align-items-center">
+          <div><img src="images/arrow-nav.svg" alt="arrow"></div>
+          <a class="fw-medium fs-6 white-color nav-link" href="index.html">Назад</a>
+        </div>
+        <div class="fs-6 white-color d-flex gap-1">Главная / Об амбарной доске</div>
+      </div>
+      <div class="text-uppercase fs-42 white-color text-center" style="font-family: 'Tenor Sans';">Об амбарной доске</div>
+    </div>
+    <div class="container row p-0 flex-row gap-50 mt-70 align-items-center">
+      <div class="col">
+        <img src="images/about-board1.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="col d-flex gap-20 flex-column">
+        <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+          <div>история</div>
+          <div style="margin-left: 7%; color: #ACA095;">амбарной доски</div>
+        </div>
+        <div class="d-flex flex-column gap-20 fs-5">
+          <div>В России сохранились деревянные амбары старше 50 лет. Мы разбираем их, обрабатываем доски специальным средством от жуков и грязи, убираем гвозди. Каждая доска шлифуется вручную. </div>
+          <div>В результате получаются амбарные доски премиум класса, каждая уникального цвета, которые могут использоваться как в интерьере, так и на улице.</div>
+        </div>
+      </div>
+    </div>
+    <div class="container row p-0 flex-row gap-50 mt-70 align-items-center">
+      <div class="col d-flex gap-20 flex-column">
+        <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+          <div>особенности</div>
+          <div style="margin-left: 7%; color: #ACA095;">амбарной доски</div>
+        </div>
+        <div class="d-flex flex-column gap-20 fs-5">
+          <div>Амбарные доски, это материал созданный историей, природой и руками. Сначала природа создавала уникальный цвет и фактуру амбарной доски морозами, ветрами и солнцем.</div>
+          <div>Уникальность амбарных досок в том, что в отличие от состаренных досок нет одинаковых и похожих. Все амбарные доски обладают своей уникальной фактурой. </div>
+          <div>При этом доски оставляют свои технические свойства и доска прослужит 100 лет и более.</div>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/about-board2.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+    </div>
+    <div class="container-fluid d-flex flex-column mt-70 p-0 white-color" style="background-color: #222222;">
+      <div class="container p-0 row flex-row gap-50 mt-70 align-items-center">
+        <div class="col">
+          <img src="images/about-board3.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="col d-flex gap-20 flex-column">
+          <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+            <div>Доска из самых</div>
+            <div style="margin-left: 7%; color: #ACA095;">отдаленных мест</div>
+          </div>
+          <div class="d-flex flex-column gap-20 fs-5">
+            <div>Самая красивая доска находится в самых далеких уголка нашей родины, так что на поиски мы всегда выезжаем экспедициями</div>
+            <div>В некоторые места невозможно проехать летом, так что большую часть доски заготавливаем зимой, пока стоит лед</div>
+            <div>Мы не браконьерствуем и не расхищаем поселения. Вся доска снимается по согласованию областными властями</div>
+          </div>
+        </div>
+      </div>
+      <div class="container p-0 row flex-row gap-50 mt-70 mb-70 align-items-center">
+        <div class="col d-flex gap-20 flex-column">
+          <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+            <div>Все сделано</div>
+            <div style="margin-left: 7%; color: #ACA095;">руками</div>
+          </div>
+          <div class="d-flex flex-column gap-20 fs-5">
+            <div>Сначала мы очищаем доску от грязи и гвоздей</div>
+            <div>Обрабатываем все стороны, кроме лицевой, на станках, что бы вернуть доске геометрию</div>
+            <div>Обрабатываем доску от насекомых.</div>
+            <div>Шлифуем и брашируем лицевую сторону ручным инструментом, так как только ручной инструмент позволяет сохранить уникальность каждой доски</div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/about-board4.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+    <div class="container row p-0 flex-row gap-50 mt-70 align-items-center">
+      <div class="col d-flex gap-20 flex-column">
+        <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+          <div>Экологичность</div>
+          <div style="margin-left: 7%; color: #ACA095;">амбарной доски</div>
+        </div>
+        <div class="d-flex flex-column gap-20 fs-5">
+          <div>Старинные доски охватывают аж сразу 2 аспекта экологичности.</div>
+          <div><span class="fw-medium">Снижение нагрузки на природу</span>, так как материал повторного использования и не требует вырубки лесов и как следствие не оставляет углеродного следа.</div>
+          <div><span class="fw-medium">Экологичность самого материала</span>, который в отличие от ламината полностью натурален.</div>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/about-board5.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+    </div>
+    <div class="container d-flex mt-70 flex-column gap-5">
+      <div class="d-flex flex-column fs-36 text-uppercase" style="font-family: 'Tenor Sans'; line-height: 48px;">
+        <div>отделка</div>
+        <div style="margin-left: 7%; color: #ACA095;">амбарной доской</div>
+      </div>
+      <div class="row flex-row gap-20">
+        <div class="col d-flex flex-column gap-3">
+          <div>
+            <img src="images/about-board6.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="fs-18">Старая половая доска</div>
+          <div class="d-flex justify-content-between">
+            <div class="fs-18 fw-bold" style="color: #D8A47A;">от 3500 руб.</div>
+            <div class="d-flex gap-1 align-items-center arrow">
+              <a href="#" class="fs-14 fw-medium" style="color: #CF9B75;">Подробнее</a>
+              <div>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column gap-3">
+          <div>
+            <img src="images/about-board6.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="fs-18">Старинная вагонка</div>
+          <div class="d-flex justify-content-between">
+            <div class="fs-18 fw-bold" style="color: #D8A47A;">от 1500 руб.</div>
+            <div class="d-flex gap-1 align-items-center arrow">
+              <a href="#" class="fs-14 fw-medium" style="color: #CF9B75;">Подробнее</a>
+              <div>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column gap-3">
+          <div>
+            <img src="images/about-board6.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="fs-18">Стеновая панель 2</div>
+          <div class="d-flex justify-content-between">
+            <div class="fs-18 fw-bold" style="color: #D8A47A;">от 4000 руб.</div>
+            <div class="d-flex gap-1 align-items-center arrow">
+              <a href="#" class="fs-14 fw-medium" style="color: #CF9B75;">Подробнее</a>
+              <div>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column gap-3">
+          <div>
+            <img src="images/about-board6.png" alt="image" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="fs-18">Стеновая панель 3</div>
+          <div class="d-flex justify-content-between">
+            <div class="fs-18 fw-bold" style="color: #D8A47A;">от 4000 руб.</div>
+            <div class="d-flex gap-1 align-items-center arrow">
+              <a href="#" class="fs-14 fw-medium" style="color: #CF9B75;">Подробнее</a>
+              <div>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- questions -->
+    <div class="container-fluid d-flex container-fon-image mt-70 p-0" style="background-image: url('images/fon-questions.png'); min-height: 562px; height: 100%;">
+      <div class="container my-auto d-flex flex-column p-0 gap-80">
+        <div class="d-flex flex-column fs-36 text-uppercase white-color" style="font-family: 'Tenor Sans'; line-height: 48px;">
+          <div>есть вопросы?</div>
+          <div style="margin-left: 7%; color: #ACA095;">оставьте заявку!</div>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+          <form class="was-validated d-flex" id="myFormFeedback">
+            <div class="d-flex flex-column gap-20">
+              <div class="d-flex flex-row gap-20 align-items-end">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                  <label class="fw-bold white-color" for="name2">Ваше имя</label>
+                  <input type="text" class="form-check-input fs-14 m-0" style="width: 257px; height: 64px;" id="name2" name="name2" pattern=".{2,}" required placeholder="Имя" aria-label="Username"/>
+                </div>
+                <div class="d-flex flex-column" style="gap: 5px;">
+                  <label class="fw-bold white-color" for="tel2">Ваш телефон</label>
+                  <input type="tel" class="form-check-input fs-14 m-0" style="width: 257px; height: 64px;" id="tel2" pattern="^\+?\d{10,}$" name="tel2" required placeholder="+7 (999) 999 99-99" aria-label="tel"/>
+                </div>
+                <button type="submit" class="btn btn-custom fs-18 fw-bold" style="width: 257px; height: 64px;">
+                  Оставить заявку
+                </button>
+              </div>
+              <div class="fw-light fs-12 white-color">Нажимая на кнопку “Оставить заявку”, вы соглашаетесь с Политикой конфиденциальности данных</div>
+            </div>
+          </form>
+          <div class="d-flex flex-column gap-20 white-color">
+            <div class="fs-18" style="max-width: 254px;">Оставьте заявку или позвоните нам по номеру:</div>
+            <div class="fs-22 fw-medium">+7 (929) 590 82-87</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid mt-f-70" style="background-color: #34353D; border-radius: 60px 60px 0 0;">
+      <div class="container p-0 d-flex flex-row justify-content-between white-color">
+        <div class="d-flex flex-column gap-4">
+          <div>
+            <img src="images/logo-light.svg" alt="logo">
+          </div>
+          <div class="fs-12">© 2023. Все права защищены</div>
+        </div>
+        <div class="d-flex flex-column gap-4 fw-medium show-before-phone">
+          <div class="fs-6">МЕНЮ</div>
+          <a class="fs-14 fw-medium" href="index.html#catalog">Каталог</a>
+          <a class="fs-14 fw-medium" href="about-board.html">Об амбарной доске</a>
+          <a class="fs-14 fw-medium" href="our-works.html">Наши работы</a>
+          <a class="fs-14 fw-medium" href="about-us.html">О нас</a>
+          <a class="fs-14 fw-medium" href="contacts.html">Контакты</a>
+        </div>
+        <div class="d-flex flex-column gap-4">
+          <div class="fs-6 show-before-phone">ИНФОРМАЦИЯ</div>
+          <a class="fs-14 fw-medium" href="#">Политика конфиденциальности</a>
+          <a class="fs-14 fw-medium" href="#">Публичная оферта</a>
+          <a class="fs-14 fw-medium show-before-phone" href="#">Доставка</a>
+          <a class="fs-14 fw-medium show-before-phone" href="#">Оплата</a>
+        </div>
+        <div class="d-flex flex-column gap-4 show-before-phone">
+          <div class="fs-6">КОНТАКТЫ</div>
+          <a class="fs-14 fw-medium" href="#">Москва, ул. Тимирязевская, д.1, стр.2</a>
+          <a class="fs-14 fw-medium" href="#">Санкт-Петербург, ул. Швецова, д.41К</a>
+          <a class="fs-14 fw-medium" href="#">+7 (929) 590 82-87</a>
+          <div class="d-flex gap-2">
+            <a href="#">
+              <img src="images/footer-wp.svg" alt="whatsapp">
+            </a>
+            <a href="#">
+              <img src="images/footer-vk.svg" alt="vk">
+            </a>
+            <a href="#">
+              <img src="images/footer-yb.svg" alt="youtube">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+
+    document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      document.getElementById('myForm').reset();
+    });
+
+  </script>
+</body>
+</html>
